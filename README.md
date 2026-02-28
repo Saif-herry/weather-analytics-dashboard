@@ -1,220 +1,210 @@
-🌦️ Weather Analytics Dashboard
+# 🌦️ Weather Analytics Dashboard
 
-A modern, scalable, and interactive Weather Analytics Dashboard built using React and Redux Toolkit.
+A modern, scalable, and interactive **Weather Analytics Dashboard** built using **React, Redux Toolkit, and Vite**.
+
 The application provides real-time weather insights, forecast analytics, historical comparisons, and rich data visualizations for multiple cities.
+
+---
+
+## 📌 Project Overview
 
 This project demonstrates strong understanding of:
 
-API Integration
+- API Integration  
+- Centralized State Management  
+- Data Visualization  
+- UI/UX Design Principles  
+- Performance Optimization  
+- Responsive Design  
 
-Centralized State Management
+---
 
-Data Visualization
+## 🚀 Features
 
-UI/UX Design Principles
+### 📊 Dashboard Overview
 
-Performance Optimization
+- Displays weather summary cards for multiple cities  
+- Shows:
+  - Current Temperature  
+  - Weather Condition Icon  
+  - Humidity  
+  - Wind Speed  
+- Quick visual comparison between cities  
+- Favorite cities pinned on dashboard  
 
-Responsive Design
+---
 
-🚀 Live Features
-📊 Dashboard Overview
-
-Displays weather summary cards for multiple cities
-
-Shows:
-
-Current Temperature
-
-Weather Condition Icon
-
-Humidity
-
-Wind Speed
-
-Quick visual comparison between cities
-
-Favorite cities pinned on dashboard
-
-🔍 Detailed Weather Analytics
+### 🔍 Detailed Weather Analytics
 
 When a user selects a city:
 
-5–7 Day Forecast
+- 5–7 Day Forecast  
+- Hour-by-Hour Forecast  
+- Extended Metrics:
+  - Pressure  
+  - UV Index  
+  - Wind Direction  
+  - Feels Like Temperature  
 
-Hour-by-Hour Forecast
+---
 
-Extended Metrics:
+### 📈 Interactive Data Visualization
 
-Pressure
+Built using **Recharts**:
 
-UV Index
+- Temperature Trends (Hourly & Daily)  
+- Precipitation Patterns  
+- Wind Speed Trends  
+- Interactive Tooltips  
+- Fully Responsive Charts  
 
-Wind Direction
+---
 
-Feels Like Temperature
+### 📅 Historical Weather Comparison (Implemented)
 
-📈 Interactive Data Visualization
+- Compare past weather trends  
+- Analyze temperature changes over time  
+- Visual chart-based comparison  
+- Long-term weather pattern insights  
 
-Built using Recharts:
+---
 
-Temperature Trends (Hourly & Daily)
+### 🌙 Dark / Light Theme Toggle (Implemented)
 
-Precipitation Patterns
+- User-controlled theme switching  
+- Smooth UI transitions  
+- Improved accessibility  
+- Modern UI experience  
 
-Wind Speed Trends
+---
 
-Interactive Tooltips
+### 🔎 Search & Favorites
 
-Responsive Charts (Mobile Friendly)
+- Search cities using Weather API  
+- Add / Remove cities from favorites  
+- Favorites persist using Local Storage  
+- Quick access to important locations  
 
-📅 Historical Weather Comparison (Implemented)
+---
 
-Compare past weather trends
+### 🌡 Temperature Unit Toggle
 
-Analyze temperature changes over time
+- Switch between:
+  - Celsius (°C)  
+  - Fahrenheit (°F)  
+- Managed globally using Redux Toolkit  
 
-Visual chart-based comparison for better insights
+---
 
-Helps users understand long-term patterns
+## 🛠️ Technical Stack
 
-🌙 Dark / Light Theme Toggle (Implemented)
+| Technology        | Purpose                     |
+|------------------|----------------------------|
+| React (Hooks)    | UI Development              |
+| Redux Toolkit    | Global State Management     |
+| WeatherAPI       | Real-Time Weather Data      |
+| Recharts         | Data Visualization          |
+| Tailwind / CSS   | Styling                     |
+| Local Storage    | Persistence                 |
+| Vite             | Build Tool                  |
 
-User-controlled theme switch
+---
 
-Smooth UI transition
-
-Theme preference preserved during session
-
-Improved accessibility & modern UI experience
-
-🔎 Search & Favorites
-
-Search cities using Weather API
-
-Add / Remove cities from favorites
-
-Favorites persist using local storage
-
-Quick access to important locations
-
-🌡 Temperature Unit Toggle
-
-Switch between:
-
-Celsius (°C)
-
-Fahrenheit (°F)
-
-Managed globally using Redux Toolkit
-
-🛠️ Technical Stack
-Technology	Purpose
-React (Hooks)	UI Development
-Redux Toolkit	Global State Management
-WeatherAPI	Real-Time Weather Data
-Recharts	Data Visualization
-CSS / Styled Components / Tailwind (if used)	Styling
-Local Storage	Persistence
-🌐 API Integration
+## 🌐 API Integration
 
 Weather data is fetched from:
 
-WeatherAPI
+**WeatherAPI**  
 https://www.weatherapi.com/
 
 The application handles:
 
-Asynchronous API calls
+- Asynchronous API calls  
+- Error handling  
+- Loading states  
+- Secure API key management via environment variables  
 
-Error handling
+---
 
-Loading states
-
-Secure API key management using environment variables
-
-📂 Project Structure
+## 📂 Project Structure
 weather-analytics-dashboard/
 ├── app/
-│   └── globals.css
+│ └── globals.css
 ├── components/
-│   ├── providers.jsx
-│   ├── theme-provider.jsx
-│   ├── ui/
-│   │   ├── badge.jsx
-│   │   ├── button.jsx
-│   │   ├── card.jsx
-│   │   ├── dialog.jsx
-│   │   ├── input.jsx
-│   │   ├── scroll-area.jsx
-│   │   ├── skeleton.jsx
-│   │   └── tabs.jsx
-│   └── weather/
-│       ├── charts/
-│       │   ├── daily-temperature-chart.jsx
-│       │   ├── precipitation-chart.jsx
-│       │   ├── temperature-chart.jsx
-│       │   └── wind-chart.jsx
-│       ├── city-card.jsx
-│       ├── city-detail.jsx
-│       ├── daily-forecast.jsx
-│       ├── dashboard-header.jsx
-│       ├── dashboard.jsx
-│       ├── detail-stats.jsx
-│       ├── historical-trends.jsx
-│       ├── hourly-forecast.jsx
-│       ├── search-bar.jsx
-│       ├── settings-panel.jsx
-│       └── weather-icon.jsx
+│ ├── providers.jsx
+│ ├── theme-provider.jsx
+│ ├── ui/
+│ │ ├── badge.jsx
+│ │ ├── button.jsx
+│ │ ├── card.jsx
+│ │ ├── dialog.jsx
+│ │ ├── input.jsx
+│ │ ├── scroll-area.jsx
+│ │ ├── skeleton.jsx
+│ │ └── tabs.jsx
+│ └── weather/
+│ ├── charts/
+│ │ ├── daily-temperature-chart.jsx
+│ │ ├── precipitation-chart.jsx
+│ │ ├── temperature-chart.jsx
+│ │ └── wind-chart.jsx
+│ ├── city-card.jsx
+│ ├── city-detail.jsx
+│ ├── daily-forecast.jsx
+│ ├── dashboard-header.jsx
+│ ├── dashboard.jsx
+│ ├── detail-stats.jsx
+│ ├── historical-trends.jsx
+│ ├── hourly-forecast.jsx
+│ ├── search-bar.jsx
+│ ├── settings-panel.jsx
+│ └── weather-icon.jsx
 ├── lib/
-│   ├── store/
-│   │   ├── index.js
-│   │   └── weather-slice.js
-│   ├── utils.js
-│   └── weather-utils.js
+│ ├── store/
+│ │ ├── index.js
+│ │ └── weather-slice.js
+│ ├── utils.js
+│ └── weather-utils.js
 ├── public/
-│   ├── icon.svg
-│   ├── placeholder-logo.svg
-│   └── placeholder.svg
 ├── src/
-│   ├── App.jsx
-│   └── main.jsx
+│ ├── App.jsx
+│ └── main.jsx
 ├── styles/
-│   └── globals.css
+│ └── globals.css
 ├── .env.example
-├── .gitignore
-├── components.json
-├── index.html
-├── jsconfig.json
 ├── package.json
-├── package-lock.json
-├── pnpm-lock.yaml
-├── postcss.config.mjs
-└── vite.config.js
+├── vite.config.js
 
-⚙️ Installation & Setup
-1️⃣ Clone the Repository
+
+---
+
+## ⚙️ Installation & Setup
+
+### 1️⃣ Clone the Repository
+
+```bash
 git clone https://github.com/your-username/weather-analytics-dashboard.git
-2️⃣ Navigate to Project Folder
+
+### 2️⃣ Navigate to Project Folder
 cd weather-analytics-dashboard
-3️⃣ Install Dependencies
+### 3️⃣ Install Dependencies
 npm install
-4️⃣ Setup Environment Variables
+### 4️⃣ Setup Environment Variables
 
 Create a .env file in the root directory:
 
-REACT_APP_WEATHER_API_KEY=your_api_key_here
-5️⃣ Run the Application
-npm start
+VITE_WEATHER_API_KEY=your_api_key_here
+### 5️⃣ Run the Application
+npm run dev
 
-Application runs on:
+## Application runs on:
 
-http://localhost:3000
+http://localhost:5173
 📱 Responsive Design
 
 Fully responsive layout
 
-Optimized for:
+## Optimized for:
 
 Desktop
 
@@ -222,19 +212,19 @@ Tablet
 
 Mobile devices
 
-🧠 Architectural Highlights
+## 🧠 Architectural Highlights
 
-Clean component structure
+Clean component-based architecture
 
 Centralized state management with Redux Toolkit
 
-Reusable chart components
+Reusable and modular chart components
 
 Scalable folder structure
 
-Separation of concerns (UI / Logic / API Layer)
+Proper separation of concerns (UI / Logic / API Layer)
 
-🔮 Future Enhancements
+## 🔮 Future Enhancements
 
 Google Authentication
 
@@ -246,7 +236,7 @@ Weather alerts system
 
 Export analytics reports
 
-👨‍💻 Author
+## 👨‍💻 Author
 
 Mohammad Saif
 Frontend Developer
