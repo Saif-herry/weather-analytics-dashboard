@@ -239,4 +239,4 @@ Export analytics reports
 ## 👨‍💻 Author
 
 Mohammad Saif
-Frontend Developer
+Software Developer
